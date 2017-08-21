@@ -20,7 +20,6 @@ import warnings
 def main():
     ## Load the iris data 
     iris = datasets.load_iris()
-    ##
     X_train, X_test, y_train, y_test,iris_df, X,y=get_data(iris)
     X_train_std,X_test_std=scale_data(X_train,X_test,iris_df)
     show_data(y_test,X,y)
@@ -46,7 +45,7 @@ def get_data(iris):
     X_train.shape[0], X_test.shape[0]))
     print()
     return(X_train, X_test, y_train, y_test,iris_df, X,y)
-
+##scale data before training it
 def scale_data(X_train,X_test,iris_df):
      sc = StandardScaler()
      sc.fit(X_train)
@@ -55,7 +54,7 @@ def scale_data(X_train,X_test,iris_df):
      print('After standardizing our features,data looks like as follows:\n')
      print(pd.DataFrame(X_train_std, columns=iris_df.columns).head())
      return(X_train_std,X_test_std)
-    
+##visualization of data   
 def show_data(y_test,X,y):
     ##There are 3 classes
     markers = ('s', 'x', 'o')
@@ -65,7 +64,7 @@ def show_data(y_test,X,y):
             plt.scatter(x=X[y == cl, 0], y=X[y == cl, 1],
                    c=cmap(idx), marker=markers[idx], label=cl)
     plt.show()
-
+##SVM Class
 class SVM(object):
    def __init__(self,X_train_std,y_train,X_test_std, y_test):
      self.X_train_std=X_train_std
