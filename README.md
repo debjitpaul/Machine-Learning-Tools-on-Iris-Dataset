@@ -1,7 +1,7 @@
 # Machine Learning Tools-on-Iris-Dataset
-The tool is made perform Machine Learning classification on Iris Dataset.
-In recent times,we have seen the vast use of Machine Learning in the field of datamining and data analysis. The following tools are simple yet efficient.
-Implimented the following Machine Learning classification tools: 
+This tool is made to perform Machine Learning classification on Iris Dataset.
+In recent times, we have seen the vast use of Machine Learning tenchiques in the field of Datamining and Data analysis. The following tools are simple yet efficient.
+Machine Learning classification tools are as follows: 
 
 _**Support Vector Machine**_,
 
