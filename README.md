@@ -3,13 +3,13 @@ The tool is made perform Machine Learning classification on Iris Dataset.
 In recent times,we have seen the vast use of Machine Learning in the field of datamining and data analysis. The following tools are simple yet efficient.
 Implimented the following Machine Learning classification tools: 
 
-*Support Vector Machine*,
+_**Support Vector Machine**_,
 
-*Logistic Regression*,
+_**Logistic Regression**_,
 
-*Adaboost*,
+_**Adaboost**_,
 
-*Random forest*.
+_**Random forest**_.
 
 
 ## Visiualize and Analysis of Iris Dataset 
@@ -17,4 +17,4 @@ Implimented the following Machine Learning classification tools:
 ## Tool Used:
 1)Python
 
-2)[scikit learn]{http://scikit-learn.org/stable/index.html}
+2){scikit learn}[http://scikit-learn.org/stable/index.html]
