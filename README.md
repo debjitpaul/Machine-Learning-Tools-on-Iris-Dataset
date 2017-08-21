@@ -1,2 +1,7 @@
-# SVM-on-Iris-Dataset
-Implementation of SVM and Visiualize Dataset 
+# Machine Learning Models-on-Iris-Dataset
+Implementation of SVM 
+Implementation of Logistic Regression
+Visiualize Dataset 
+## Tool Used:
+Python
+scklearn
