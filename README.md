@@ -1,11 +1,11 @@
 # Machine Learning Models-on-Iris-Dataset
-Implementation of SVM 
+1)Implementation of SVM 
 
-Implementation of Logistic Regression
+2)Implementation of Logistic Regression
 
-Visiualize and Analysis of Iris Dataset 
+3)Visiualize and Analysis of Iris Dataset 
 
 ## Tool Used:
-Python
+1)Python
 
-scklearn
+2)scklearn
