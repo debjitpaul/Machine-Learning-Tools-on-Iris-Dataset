@@ -15,14 +15,14 @@ _**Random forest**_.
 ## Visiualize and Analysis of Iris Dataset 
 
 ## Tool Used:
-1)Python3
+1) Python3
 
-2)numpy
+2) numpy
 
-3)pylab
+3) pylab
 
-4)matplotlib
+4) matplotlib
 
-5)pandas
+5) pandas
 
-2)[scikit learn](http://scikit-learn.org/stable/index.html)
+6) [scikit learn](http://scikit-learn.org/stable/index.html)
