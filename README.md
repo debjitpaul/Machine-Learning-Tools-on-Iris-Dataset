@@ -1,5 +1,5 @@
 # Machine Learning Models-on-Iris-Dataset
-SVM and Logistic Regression are basic classification technique, yet very popular and frequent classification tenhnique. This tool performs the following the task on Iris-Dataset : 
+SVM and Logistic Regression are basic classification technique, yet very popular and efficent classification tenhnique. This tool performs the following the task on Iris-Dataset : 
 
 1)Implementation of SVM 
 
