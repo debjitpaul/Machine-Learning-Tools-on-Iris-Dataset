@@ -22,12 +22,11 @@ import warnings
 def main():
     ## Load the iris data 
     iris = datasets.load_iris()
-    ##
     X_train, X_test, y_train, y_test,iris_df, X,y=get_data(iris)
     X_train_std,X_test_std=scale_data(X_train,X_test,iris_df)
     show_data(y_test,X,y)
-    classification=Logistic(X_train_std,y_train, X_test_std, y_test)
-    classification.perform_svm(X_train_std, y_train, X_test_std, y_test)
+    classification=Logistic(X_train_std,y_train, X_test_std, y_test) ##classification is a object of class Logistic
+    classification.perform_logistic(X_train_std, y_train, X_test_std, y_test) ##perform logistic regression by feeding the data
     
 def get_data(iris):
 # Only petal length and petal width considered
@@ -48,7 +47,7 @@ def get_data(iris):
     X_train.shape[0], X_test.shape[0]))
     print()
     return(X_train, X_test, y_train, y_test,iris_df, X,y)
-
+##scale the training data before training
 def scale_data(X_train,X_test,iris_df):
      sc = StandardScaler()
      sc.fit(X_train)
@@ -57,7 +56,7 @@ def scale_data(X_train,X_test,iris_df):
      print('After standardizing our features,data looks like as follows:\n')
      print(pd.DataFrame(X_train_std, columns=iris_df.columns).head())
      return(X_train_std,X_test_std)
-    
+##visualization of the data    
 def show_data(y_test,X,y):
     ##There are 3 classes
     markers = ('s', 'x', 'o')
@@ -69,14 +68,14 @@ def show_data(y_test,X,y):
     plt.xlabel('Sepal length')
     plt.ylabel('Sepal width')
     plt.show()
-
+## Logistic Regression Class
 class Logistic(object):
    def __init__(self,X_train_std,y_train,X_test_std, y_test):
      self.X_train_std=X_train_std
      self.y_train=y_train
      self.X_test_std=X_test_std
      self.y_test=y_test
-   def perform_svm(self,X_train_std,y_train,X_test_std, y_test):
+   def perform_logistic(self,X_train_std,y_train,X_test_std, y_test):
       h = .02  # step size in the mesh
 
       logreg = linear_model.LogisticRegression(C=1e5)
