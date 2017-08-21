@@ -2,13 +2,17 @@
 
 Simple and efficient tools for data mining and data analysis.
 Implimented the following Machine Learning classification tools: 
-###Support Vector Machine 
-###Logistic Regression 
-###Adaboost
-###Random forest
+
+### Support Vector Machine,
+
+### Logistic Regression,
+
+### Adaboost,
+
+### Random forest.
 
 
-##Visiualize and Analysis of Iris Dataset 
+## Visiualize and Analysis of Iris Dataset 
 
 ## Tool Used:
 1)Python
